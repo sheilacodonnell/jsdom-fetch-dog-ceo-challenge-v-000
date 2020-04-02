@@ -10,20 +10,6 @@ document.addEventListener("DOMContentLoaded", function(){
     loadBreeds();
 })
 
-	breedDropdown.addEventListener('change', () => {
-		const letter = event.target.value;
-		filterBreeds(letter, breeds)
-	})
-
-function filterBreeds(letter, breeds) {
- let dogs = breeds.filter(breed => breed[0] === letter)
-  breeds{
-	let ul = document.querySelector('#dog-breeds')
-	ul.innerHTML = ""
-	filteredBreeds.forEach(breed => createBreedList(breed))
-}
-}
-
 function loadImages() {
   fetch(imgUrl)
     .then((response) =>
