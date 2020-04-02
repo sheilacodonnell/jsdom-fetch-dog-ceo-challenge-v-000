@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	})
 
 function filterBreeds(letter, breeds) {
-  
+  breeds.filter(breed => breed[0] === letter)
 }
 
 function loadImages() {
