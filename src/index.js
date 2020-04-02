@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	})
 
 function filterBreeds(letter, breeds) {
-  breeds = breeds.filter(breed => breed[0] === letter)
+ let breeds = breeds.filter(breed => breed[0] === letter)
   breeds{
 	let ul = document.querySelector('#dog-breeds')
 	ul.innerHTML = ""
