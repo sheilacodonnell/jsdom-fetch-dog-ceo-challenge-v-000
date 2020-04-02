@@ -10,6 +10,11 @@ document.addEventListener("DOMContentLoaded", function(){
     loadBreeds();
 })
 
+	breedDropdown.addEventListener('change', () => {
+		const letter = event.target.value;
+		filterForLetter(letter, breeds)
+	})
+
 function loadImages() {
   fetch(imgUrl)
     .then((response) =>
