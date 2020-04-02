@@ -2,7 +2,6 @@ console.log('%c HI', 'color: firebrick')
 const imgUrl = "https://dog.ceo/api/breeds/image/random/4"
 const images = document.getElementById('dog-image-container')
 const breedUrl = 'https://dog.ceo/api/breeds/list/all'
-const breedDropdown = document.querySelector("#breed-dropdown")
 
 
 document.addEventListener("DOMContentLoaded", function(){
